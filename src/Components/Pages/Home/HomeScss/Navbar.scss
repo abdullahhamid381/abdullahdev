@@ -1,270 +1,151 @@
-@import '../../../Responsive/Mediaquery.scss';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
-
-.nav-bar-parent {
-  position: fixed;
-  /* top: 132px; */
-  z-index: 99999;
-  width: 100%;
-  .navbar {
-    background-color: white;
-  
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-
-    /* position: sticky;
-    top: 0;
-    z-index: 20; */
-    @include mobile {
-   
-    }
-  }
-
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
-    height: 71px;
-    max-width: 1500px;
-    margin: auto;
-    @include mobile{
-      height: 55px;
-    }
-  }
-
-  .logo-div {
-    display: flex;
-  }
-
-  .nav-logo {
-    color: #f5b921;
-    align-items: center;
-
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    flex-grow: 1;
-    display: flex;
-    gap: 10px;
- 
-
-    img {
-      width: 100%;
-
-      @include sm6 {
-        width: 15%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.navbar-parent{
+    .navbar {
+        background-color: #141C27;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        position: sticky;
+        top: 0;
+        z-index: 20;
       }
-
-      @include mobile {
-        width: 10%;
+      
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        max-width: 1400px;
+        position: relative;
+        .logo{
+            width: 10%;
+            margin-top: 25px;
+            img{
+                width: 100%;
+            }
+        }
       }
-
-    }
-
-    @include sm6 {
-      padding-left: 10px;
-    }
-
-    @include mobile {
-      padding-left: 0;
-    }
-  }
-
-  .logo-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: black;
-
-    @include sm6 {
-      font-size: 20px;
-    }
-
-    @include mobile {
-      font-size: 16px;
-    }
-
-    @include smobile {
-      font-size: 12px;
-    }
-  }
-
-  .nav-menu {
-    display: flex;
-    list-style: none;
-    text-align: center;
-
-    gap: 30px;
-    align-items: center;
-  }
-
-  .nav-links {
-    color: #447FF2;
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    text-decoration: none;
-    line-height: normal;
-  }
-
-  .fa-code {
-    margin-left: 1rem;
-  }
-
-  .nav-item {
-    line-height: 40px;
-    margin-right: 1rem;
-    font-family: 'Open Sans', sans-serif !important;
-  }
-
-  .nav-item:after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0;
-    background: transparent;
-    transition: width 0.7s ease, background-color 0.5s ease;
-  }
-
-  .nav-item:hover:after {
-    color: #447FF2;
-    font-family: Open Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .nav-item .active {
-    color: #447FF2;
-    font-family: Open Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .nav-icon {
-    display: none;
-  }
-
-  @media screen and (max-width: 992px) {
-    .nav-menu {
-      display: flex;
-    flex-direction: column;
-    width: 55%;
-    border-top: 1pxsolid #fff;
-    position: absolute;
-    top: 80px;
-    left: -110%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    align-items: baseline;
-    height: 100vh;
-    }
-
-    .nav-menu.active {
-      background: #ffffff;
-    left: 0px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    @include mobile{
-      top: 53px;
-    }
-  
-    }
-
-    .nav-item .active {
-      color: #447FF2;
-      border: none;
-    }
-
-    .nav-links {
-      padding: 1.5rem;
-      width: 100%;
-      display: table;
-    }
-
-    .nav-icon {
-      display: block;
-      position: absolute;
-      top: -2px;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-      color: #000000;
-
-      @include mobile {
-        display: block;
-        position: absolute;
-        top: 3px;
-        right: -4px;
-        transform: translate(-100%, 60%);
-        font-size: 18px;
+      
+      .nav-logo {
+        color: #f5b921;
+        align-items: center;
+        margin-left: 20px;
         cursor: pointer;
-        color: #000000;
+        text-decoration: none;
+        font-size: 2rem;
+        flex-grow: 1;
+      
+        display: flex;
+        align-items: center;
+        justify-items: center;
       }
-
-    }
-  }
-
-  .log-in {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .login-navbar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-@include mobile{
-  gap: 10px;
+      
+      .nav-logo .icon {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-left: 16px;
+      }
+      
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        margin-right: 2rem;
+      }
+      
+    
+      /* .fa-code {
+        margin-left: 1rem;
+      } */
+      
+      .nav-item {
+        line-height: 40px;
+        margin-right: 4rem;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .nav-item:after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width 0.7s ease, background-color 0.5s ease;
+      }
+      
+      .nav-item:hover:after {
+        width: 100%;
+        background: #ffdd40;
+      }
+      
+      .nav-item .active {
+        color: #ffdd40;
+        border: 1px solid #ffdd40;
+      }
+      
+      .nav-icon {
+        display: none;
+        color: #f5b921;
+      }
+      
+      .nav-icon .icon {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+      }
+      
+      @media screen and (max-width: 960px) {
+        .nav-menu {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border-top: 1pxsolid #fff;
+          position: absolute;
+          top: 80px;
+          left: -110%;
+          opacity: 1;
+          transition: all 0.5s ease;
+        }
+      
+        .nav-menu.active {
+          background: #1f5156;
+          left: 0px;
+          opacity: 1;
+          transition: all 0.5s ease;
+          z-index: 1;
+        }
+        .nav-item .active {
+          color: #ffdd40;
+          border: none;
+        }
+        .nav-links {
+          padding: 1.5rem;
+          width: 100%;
+          display: table;
+        }
+      
+        .nav-logo .icon {
+          width: 2rem;
+          height: 2rem;
+        }
+      
+        .nav-icon {
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(-100%, -50%);
+          width: 2rem;
+          height: 2rem;
+          cursor: pointer;
+          color: #ffdd40;
+        }
+      }
+      
 }
-    @include lg {
-      padding-right: 80px;
-    }
 
-    @include mobile {
-      padding-right: 35px;
-    }
-
-    button {
-      font-size: 16px;
-      font-weight: 700;
-      border: 1px solid #447FF2;
-      padding: 10px 25px;
-      border-radius: 25px;
-      font-family: 'Open Sans', sans-serif !important;
-
-      @include sm {
-        padding: 5px 10px;
-
-      }
-
-      @include mobile {
-        font-size: 12px;
-      }
-
-      @include smobile {
-        font-size: 10px;
-      }
-    }
-
-
-
-
-
-
-
-  }
-
-
-}
