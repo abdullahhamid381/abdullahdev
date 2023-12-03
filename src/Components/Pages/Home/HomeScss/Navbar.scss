@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .navbar-parent{
+  position: sticky;
+  top: 0;
     .navbar {
-        background-color: #141C27;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        position: sticky;
-        top: 0;
-        z-index: 20;
+         background-color: #141C27;
+    /* height: 80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  
+    z-index: 20;
+    /* height: 0; */
+    height: 0;
+    padding: 40px;
       }
       
       .nav-container {
@@ -17,14 +21,13 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 80px;
+        /* height: 80px; */
         max-width: 1400px;
-        position: relative;
+        position: relative;;
         .logo{
-            width: 10%;
-            margin-top: 25px;
+   
             img{
-                width: 100%;
+                width: 36%;
             }
         }
       }

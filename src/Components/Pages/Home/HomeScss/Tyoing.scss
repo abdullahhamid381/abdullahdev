@@ -1,0 +1,14 @@
+// TypingAnimation.scss
+
+.typing-animation {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  padding: 20px;
+
+  p {
+    border-right: 2px solid #000; // Create a cursor effect
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

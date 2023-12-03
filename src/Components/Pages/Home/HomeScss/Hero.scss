@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.hero-main-parent{
+    .hero-back{
+        background: url('../../../../../public/images/heroback.jpg') no-repeat center center  ;
+        background-size: cover;
+     
+      width: 100%;
+      height: 100vh;
+
+
+// TypingAnimation.scss
+.text-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding-top: 60px;
+  .typing-animation {
+    h1{
+      color: white;
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 55px;
+    
+      span{
+        color: #55E6A5;
+      }
+    }
+    p{
+      color: #9D927F;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+    }
+    .my-img{
+      img{
+        width: 100%;
+        margin-left: 70px;
+      }
+    }
+}
+
+
+    }
+}
