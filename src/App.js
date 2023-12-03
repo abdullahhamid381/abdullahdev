@@ -6,7 +6,7 @@ import MouseTracker from './Components/MouseTracker'
 const App = ({ toggleTheme }) => {
   return (
     <div>
-<MouseTracker/>
+
   <Home/>
 
 

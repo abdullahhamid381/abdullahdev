@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <div div className="navbar-parent">
       <nav className="navbar">
-        <div className="nav-container">
+      
       
          <div className="logo">
      <img src="./images/logo.png" alt="" />
@@ -54,7 +54,7 @@ function Navbar() {
               </span>
             )}
           </div>
-        </div>
+      
       </nav>
     </div>
   );
