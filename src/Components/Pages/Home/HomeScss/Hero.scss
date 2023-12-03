@@ -1,48 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-.hero-main-parent{
-    .hero-back{
-        background: url('../../../../../public/images/heroback.jpg') no-repeat center center  ;
-        background-size: cover;
-     
+
+.hero-main-parent {
+  .hero-back {
+    background: url('../../../../../public/images/heroback.jpg') no-repeat center center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+
+    // TypingAnimation.scss
+    .text-img {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      max-width: 1300px;
       width: 100%;
-      height: 100vh;
+      margin: auto;
+      padding-top: 60px;
 
+      .typing-animation {
+        h1 {
+          color: white;
+          padding: 0;
+          margin: 0;
+          font-family: 'Poppins', sans-serif;
+          font-size: 55px;
 
-// TypingAnimation.scss
-.text-img{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  max-width: 1300px;
-  width: 100%;
-  margin: auto;
-  padding-top: 60px;
-  .typing-animation {
-    h1{
-      color: white;
-      padding: 0;
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      font-size: 55px;
-    
-      span{
-        color: #55E6A5;
+          span {
+            color: #55E6A5;
+          }
+        }
+
+        p {
+          color: #9D927F;
+          font-size: 16px;
+          font-family: 'Poppins', sans-serif;
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+         gap: 40px;
+         padding-top: 40px;
+          .download{
+            background: #55E6A5;
+            border: none;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 20px 30px;
+            transition: .8s;
+            font-size: 16px;
+          }
+          .download:hover{
+            background: #141C27;
+            color: white;
+          }
+          
+          .play-parent{
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+            .play{
+              background: #55E6A5;
+              height: 50px !important;
+              width: 50px !important;
+              border: none;
+              font-size: 25px;
+              cursor: pointer;
+              border-radius: 80px;
+            }
+            span:hover{
+color: #55E6A5;
+transition: .8S;
+            }
+          }
+         
+          
+        }
+
+      }
+
+      .my-img {
+        img {
+          width: 100%;
+          margin-left: 70px;
+        }
+
+        
       }
     }
-    p{
-      color: #9D927F;
-      font-size: 16px;
-      font-family: 'Poppins', sans-serif;
-    }
-    }
-    .my-img{
-      img{
-        width: 100%;
-        margin-left: 70px;
-      }
-    }
-}
 
 
-    }
+  }
 }
