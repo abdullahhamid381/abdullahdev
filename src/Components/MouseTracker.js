@@ -17,7 +17,7 @@ const MouseTracker = () => {
   }, []);
 
   return (
-    <div style={{ position: 'relative', height: '' }}>
+    <div style={{ position: '', height: '' }}>
       <div
         style={{
           position: 'absolute',

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 .hero-main-parent {
   .hero-back {
@@ -26,6 +26,7 @@
           margin: 0;
           font-family: 'Poppins', sans-serif;
           font-size: 55px;
+          font-weight: 700 !important;
 
           span {
             color: #55E6A5;
@@ -36,6 +37,7 @@
           color: #9D927F;
           font-size: 16px;
           font-family: 'Poppins', sans-serif;
+          font-weight: 500;
         }
         .buttons {
           display: flex;
