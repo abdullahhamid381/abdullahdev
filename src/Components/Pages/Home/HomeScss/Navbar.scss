@@ -22,12 +22,27 @@
     /* height: 0; */
     height: 0;
     padding: 40px;
+    .contact{
+    margin-right: -40px;
+ 
+   
+      button{
+        background: #55E6A5;
+        border: none;
+        width: 100%;
+        font-size: 50px;
+        padding: 0 15px;
+        height: 80px;
+        cursor: pointer;
+      }
+    }
       }
       
      
 
         .logo{
    margin-left: -40px;
+   cursor: pointer;
             img{
                 width: 36%;
             }
@@ -72,6 +87,7 @@
         margin-right: 4rem;
         color: white;
         font-family: 'Poppins', sans-serif;
+        cursor: pointer;
       }
       
       .nav-item:after {
@@ -85,7 +101,7 @@
       
       .nav-item:hover:after {
         width: 100%;
-        background: #ffdd40;
+        background: #55E6A5;
       }
       
       .nav-item .active {
@@ -125,7 +141,7 @@
           z-index: 1;
         }
         .nav-item .active {
-          color: #ffdd40;
+          color: #55E6A5;
           border: none;
         }
         .nav-links {

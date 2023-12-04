@@ -1,0 +1,11 @@
+.fixed{
+    position: fixed;
+    top: 350px;
+    left: -344px !important;
+    transform: rotate(90deg);
+    
+    span{
+        color: #55E6A5;
+        letter-spacing: 5px;
+    }
+}
