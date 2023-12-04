@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import "./HomeScss/Navbar.scss";
 import {AiOutlineClose} from 'react-icons/ai'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import { Form } from "../../Form/Form";
 const style = {
   position: 'absolute',
   top: '50%',
@@ -69,11 +70,9 @@ function Navbar() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+         <Form/>
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+        
         </Box>
       </Modal>
           <div className="nav-icon" onClick={handleClick}>

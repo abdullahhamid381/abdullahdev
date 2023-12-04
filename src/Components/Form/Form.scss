@@ -21,6 +21,7 @@
         }
         input::placeholder{
             color: #A6A6AC;
+            background: none;
         }
         
     }
@@ -42,6 +43,7 @@
         }
         input::placeholder{
             color: #A6A6AC;
+            background: none;
         }
     }
     .phone-label{
@@ -62,6 +64,7 @@
         }
         input::placeholder{
             color: #A6A6AC;
+            background: none;
         }
     }
     .message-parent{
@@ -81,9 +84,11 @@
             font-family: 'Poppins', sans-serif;
             outline: none;
             height: 180px;
+            
         }
         .message::placeholder{
             color: #A6A6AC;
+            background: none;
         }
     }
     .touch{
@@ -95,7 +100,7 @@
         line-height: 48px;
        }
        p{
-        color: white;
+        color: #A6A6AC;
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
         font-weight: 400;
