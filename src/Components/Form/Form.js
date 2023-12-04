@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import { IoIosSend } from "react-icons/io";
 import './Form.scss'
 const style = {
   position: 'absolute',
@@ -112,7 +113,7 @@ export const Form = () => {
       </div>
 
       <div>
-        <input type="submit" value="Send" />
+       <button value='send' className='submit'>Send <IoIosSend /></button>
       </div>
 
       <Modal
@@ -153,6 +154,7 @@ export const Form = () => {
         </Box>
       </Modal>
     </form>
+    lo
 </div>
   );
 };

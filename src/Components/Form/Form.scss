@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 .form-parent{
+    background: #09101A;
+    padding: 40px;
     .name-parent{
         label{
             color: white;
@@ -10,7 +12,7 @@
             border: 1px solid #55E6A5;
             background: none;
             color: white;
-            width: 100%;
+            width: 93%;
             padding: 20px 20px;
             margin-top: 30px;
             font-size: 18px;
@@ -31,7 +33,7 @@
             border: 1px solid #55E6A5;
             background: none;
             color: white;
-            width: 100%;
+            width: 93%;
             padding: 20px 20px;
             margin-top: 30px;
             font-size: 18px;
@@ -51,7 +53,7 @@
             border: 1px solid #55E6A5;
             background: none;
             color: white;
-            width: 100%;
+            width: 93%;
             padding: 20px 20px;
             margin-top: 30px;
             font-size: 18px;
@@ -72,7 +74,7 @@
             border: 1px solid #55E6A5;
             background: none;
             color: white;
-            width: 100%;
+            width: 93%;
             padding: 20px 20px;
             margin-top: 30px;
             font-size: 18px;
@@ -103,4 +105,23 @@
     .requ{
         font-family: 'Poppins', sans-serif;
     }
+    .submit{
+        background: #55E6A5;
+        border: none;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 20px 30px;
+        transition: .8s;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap:5px;
+      }
+      .submit:hover{
+        background: #141C27;
+        color: white;
+      }
 }
