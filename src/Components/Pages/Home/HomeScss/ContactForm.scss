@@ -8,6 +8,8 @@
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr ;
+        gap: 0 80px;
+place-content: center;
 
         .text{
             h1{

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+.form-parent{
+    .name-parent{
+        label{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: none;
+        }
+        input{
+            border: 1px solid #55E6A5;
+            background: none;
+            color: white;
+            width: 100%;
+            padding: 20px 20px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+        }
+        input::placeholder{
+            color: #A6A6AC;
+        }
+        
+    }
+    .email-parent{
+        label{
+            color: white;
+            display: none;
+        }
+        input{
+            border: 1px solid #55E6A5;
+            background: none;
+            color: white;
+            width: 100%;
+            padding: 20px 20px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+        }
+        input::placeholder{
+            color: #A6A6AC;
+        }
+    }
+    .phone-label{
+        label{
+            color: white;
+            display: none;
+        }
+        input{
+            border: 1px solid #55E6A5;
+            background: none;
+            color: white;
+            width: 100%;
+            padding: 20px 20px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+        }
+        input::placeholder{
+            color: #A6A6AC;
+        }
+    }
+    .message-parent{
+        label{
+            color: white;
+            display: none;
+        }
+        .message
+        {
+            border: 1px solid #55E6A5;
+            background: none;
+            color: white;
+            width: 100%;
+            padding: 20px 20px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            height: 180px;
+        }
+        .message::placeholder{
+            color: #A6A6AC;
+        }
+    }
+    .touch{
+       h1{
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+       }
+       p{
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27.2px;
+       }
+    }
+    .requ{
+        font-family: 'Poppins', sans-serif;
+    }
+}

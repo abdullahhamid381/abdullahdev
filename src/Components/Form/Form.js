@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
+import './Form.scss'
 const style = {
   position: 'absolute',
   top: '50%',
@@ -73,31 +73,47 @@ export const Form = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-  <div>
-  <label>Name</label>
-      <input type="text" name="user_name" />
-      {submitAttempted && errors.name && <p style={{ color: 'red' }}>{errors.name}</p>}
+<div className="form-parent">
+  <div className='touch'>
+    <h1>GET TOUCH ME?</h1>
+    <p>For your car we will do everything advice design in us repairs and maintenance We are the some preferred.</p>
   </div>
+<form ref={form} onSubmit={sendEmail}>
+      <div className='name-parent'>
+        <div>
+          <label>Name</label>
+        </div>
+        <input type="text" name="user_name" placeholder='Your Name (Required)'/>
+        {submitAttempted && errors.name && <p style={{ color: 'red' }} className='requ'>{errors.name}</p>}
+      </div>
 
-   <div>
-   <label>Email</label>
-      <input type="email" name="user_email" />
-      {submitAttempted && errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
-   </div>
+      <div className='email-parent'>
+        <div>
+          <label>Email</label>
+        </div>
+        <input type="email" name="user_email" placeholder='Email (Required)' />
+        {submitAttempted && errors.email && <p style={{ color: 'red' }} className='requ'>{errors.email}</p>}
+      </div>
 
-     <div>
-     <label>Phone</label>
-      <input type="tel" name="phone" />
-     </div>
+      <div className='phone-label'>
+        <div> <label>Phone</label></div>
+        <input type="tel" name="phone" placeholder='Phone Number (Optional)'/>
+      </div>
 
-<div>
-<label>Message</label>
-      <textarea name="message" />
-      {submitAttempted && errors.message && <p style={{ color: 'red' }}>{errors.message}</p>}
-</div>
+   
+        <div className='message-parent'>
+          <div>
+            <label>Message</label>
+          </div>
+       
+        <textarea name="message" className='message' placeholder='Message (Required)'/>
+        {submitAttempted && errors.message && <p style={{ color: 'red' }} className='requ'>{errors.message}</p>}
+      
+      </div>
 
-      <input type="submit" value="Send" />
+      <div>
+        <input type="submit" value="Send" />
+      </div>
 
       <Modal
         open={open}
@@ -137,5 +153,6 @@ export const Form = () => {
         </Box>
       </Modal>
     </form>
+</div>
   );
 };
