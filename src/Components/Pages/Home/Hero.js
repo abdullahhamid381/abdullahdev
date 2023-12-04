@@ -45,7 +45,7 @@ const Hero = () => {
             <p>
             Dynamic ReactJS and Node.js developer with a formidable two-year track record. Expertise in crafting high-impact, responsive interfaces and robust server-side solutions. Demonstrated ability to innovate and streamline development processes. Ready to elevate your projects with my seasoned skills.</p>
             <div className='buttons'>
-              <button className='download'>Download Cv <FiDownload /></button>
+            <a href="Abdullah Hamid Cv.pdf" download='Abdullah Hamid Cv.pdf'>  <button className='download'>Download Cv <FiDownload /></button></a>
               <div className='play-parent' onClick={handleOpen}>
                 <button className='play'><FaPlay style={{ marginTop: '5px', marginLeft: '5px' }} /> </button>
 <span>Watch The Intro</span>

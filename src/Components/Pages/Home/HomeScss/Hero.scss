@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 
 .hero-main-parent {
   .hero-back {
@@ -25,8 +25,9 @@
           padding: 0;
           margin: 0;
           font-family: 'Poppins', sans-serif;
-          font-size: 55px;
+          font-size: 60px;
           font-weight: 700 !important;
+          line-height: 72px;
 
           span {
             color: #55E6A5;

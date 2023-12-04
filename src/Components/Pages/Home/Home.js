@@ -3,15 +3,17 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import About from './About'
 import MouseTracker from '../../MouseTracker'
+import ContactForm from './ContactForm'
 const Home = () => {
   return (
     <div>
       <MouseTracker/>
         <Navbar/>
-        <MouseTracker/>
+        
         <Hero/>
-        <MouseTracker/>
+     
         <About/>
+        <ContactForm/>
     </div>
   )
 }
