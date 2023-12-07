@@ -4,6 +4,7 @@ import Hero from './Hero'
 import About from './About'
 import MouseTracker from '../../MouseTracker'
 import ContactForm from './ContactForm'
+import Skill from './Skills'
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Home = () => {
      
         <About/>
         <ContactForm/>
+        <Skill/>
     </div>
   )
 }

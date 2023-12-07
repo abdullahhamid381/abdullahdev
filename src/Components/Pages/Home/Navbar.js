@@ -8,16 +8,17 @@ import "./HomeScss/Navbar.scss";
 import {AiOutlineClose} from 'react-icons/ai'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { Form } from "../../Form/Form";
+import { PopupForm } from "../../Form/PopupForm";
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  width: '30%',
+  bgcolor: '#09101A',
+  
   boxShadow: 24,
-  p: 4,
+ 
 };
 function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -70,7 +71,7 @@ function Navbar() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-         <Form/>
+         <PopupForm/>
           </Typography>
         
         </Box>

@@ -18,7 +18,7 @@ const style = {
   p: 4,
 };
 
-export const Form = () => {
+export const PopupForm = () => {
   const [open, setOpen] = useState(false);
   const [errors, setErrors] = useState({});
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -78,7 +78,7 @@ export const Form = () => {
     <div className="form-parent">
       <div className='touch'>
         <h1>GET TOUCH ME?</h1>
-        <p>For your car we will do everything advice design in us repairs and maintenance We are the some preferred.</p>
+     
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <div className='name-parent'>
@@ -108,7 +108,7 @@ export const Form = () => {
             <label>Message</label>
           </div>
 
-          <textarea name="message" className='message' placeholder='Message (Required)' />
+          <textarea name="message" className='message' placeholder='Message (Required)' style={{height:'27px'}} />
           {submitAttempted && errors.message && <p style={{ color: 'red' }} className='requ'>{errors.message}</p>}
 
         </div>
@@ -142,10 +142,10 @@ export const Form = () => {
             ) : submitError ? (
               <>
                 <Typography id="modal-modal-title" variant="h6" component="h2" color="red">
-                 <p style={{ color: 'white', textAlign: 'center', margin: '0' }}> Error submitting the form. </p>
+                  Error submitting the form.
                 </Typography>
                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                   <p style={{ color: 'white', textAlign: 'center', margin: '0' }}>Please try again later.</p>
+                  Please try again later.
                 </Typography>
               </>
             ) : submitAttempted ? (
@@ -158,7 +158,7 @@ export const Form = () => {
           </Box>
         </Modal>
       </form>
-      lo
+   
     </div>
   );
 };
