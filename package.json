@@ -21,6 +21,7 @@
     "react-typed": "^1.2.0",
     "sass": "^1.69.5",
     "styled-components": "^6.1.1",
+    "swiper": "^11.0.5",
     "typed": "^10.0.0-beta.2",
     "web-vitals": "^2.1.4"
   },
