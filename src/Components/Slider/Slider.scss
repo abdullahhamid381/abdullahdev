@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 .slider-back{
-  background: #010306;
+  background: #02050A;
   padding-top: 120px;
   .slider-width{
     width: 100%;
@@ -30,12 +30,12 @@
  
       .grid{
        
-        background: #09101A;
+        background: #111822;
         padding: 80px 40px 80px 40px;
-        margin-top: 40px;
+        margin-top: 80px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 50px;
+        gap: 20px;
         place-content: center;
         border-radius: 8px;
         img{
