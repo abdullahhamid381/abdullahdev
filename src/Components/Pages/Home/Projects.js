@@ -4,7 +4,7 @@ import Slider from '../../Slider/Slider'
 const Projects = () => {
   return (
     <div>
-      <Slider/>
+     
     </div>
   )
 }
