@@ -4,8 +4,8 @@ import { GrFormNextLink } from "react-icons/gr";
 const images = [
   './images/global.png',
   './images/helo1.png',
-  'https://example.com/image3.jpg',
-  'https://example.com/image4.jpg',
+  './images/global.png',
+  './images/helo1.png',
   'https://example.com/image5.jpg',
   'https://example.com/image6.jpg',
   'https://example.com/image7.jpg',
@@ -34,7 +34,7 @@ heights with our portfolio expertise</h1>
       </div>
       <div className='grid-back'>
       <div className='grid'>
-        {images.slice(startIndex, startIndex + 2).map((imageUrl, index) => (
+        {images.slice(startIndex, startIndex + 4).map((imageUrl, index) => (
           <img
             key={index}
             src={imageUrl}

@@ -27,18 +27,20 @@
       }
     }
     .grid-back{
-      background: #09101A;
-      padding: 80px 40px 40px 40px;
-      margin-top: 40px;
+ 
       .grid{
        
-        
+        background: #09101A;
+        padding: 80px 40px 80px 40px;
+        margin-top: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
         place-content: center;
+        border-radius: 8px;
         img{
           width: 100%;
+          border-radius: 8px;
         }
     
       }
